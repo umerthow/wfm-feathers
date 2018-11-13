@@ -1,0 +1,18 @@
+'use strict';
+
+var _require = require('winston'),
+    createLogger = _require.createLogger,
+    format = _require.format,
+    transports = _require.transports;
+
+// Configure the Winston logger. For the complete documentation see https://github.com/winstonjs/winston
+
+
+var logger = createLogger({
+  // To see more detailed errors, change this to 'debug'
+  level: 'info',
+  format: format.combine(format.splat(), format.simple()),
+  transports: [new transports.Console()]
+});
+
+module.exports = logger;
