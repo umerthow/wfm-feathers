@@ -1,4 +1,3 @@
-# wfm-api-supersoccertv
 
 > this is api for wfm game controllers 
 
